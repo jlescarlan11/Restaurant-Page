@@ -3,8 +3,6 @@ import home from "./home.js";
 import menu from "./menu.js";
 import about from "./about.js";
 
-console.log("Karli Panget");
-
 function clearContent() {
   const content = document.getElementById("content");
   content.innerHTML = "";
