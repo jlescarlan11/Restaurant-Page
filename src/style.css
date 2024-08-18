@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 65%;
+}
+
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  background-color: rgb(34, 40, 49);
+  color: rgb(238, 238, 238);
+  min-height: 100dvh;
+}
+
+section {
+  min-height: calc(100dvh - 3.6rem - 10rem);
+}
+
+.container {
+  padding: 2rem 5rem;
+}
+
+.container#tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.tab {
+  height: 5.6rem;
+  font-size: 1.8rem;
+  width: 10rem;
+
+  border-bottom: 1px solid rgb(238, 238, 238);
+  border-radius: 2rem;
+}
+
+/* HOME SECTION */
+
+#home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+#home-container h1 {
+  font-size: 3.2rem;
+}
+
+#home-container #resto-logo {
+  width: 50rem;
+  padding: 2rem;
+}
+
+#home-container button {
+  height: 4rem;
+  font: 1.6rem;
+  padding: 0 1.6rem;
+  border: 1px solid rgb(255, 211, 105);
+}
+
+#home-container p {
+  font-size: 1.6rem;
+}
+
+/* MENU SECTION */
+#menu-card {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#menu-title {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.menu-item {
+  max-width: 30ch;
+}
+
+.menu-item img {
+  width: 30ch;
+}
+
+.appetizers,
+.salads,
+.main-courses,
+.desserts,
+.beverages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3.2rem;
+  text-align: justify;
+}
+
+/* ABOUT SECTION */
+#about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* width: 70ch; */
+  font-size: 1.6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-container > p {
+  width: 70ch;
+  text-align: justify;
+}
+
+/* FOOTER */
+#copyright {
+  text-align: center;
+  font-size: 1.6rem;
+  height: 3.6rem;
+  padding: 0.5rem;
+  border-top: 1px solid rgb(57, 62, 70);
+}
